@@ -85,6 +85,19 @@ main section{margin-bottom:72px}
 .case .nums>div{flex:1 1 auto}
 .case .nums b{display:block;font-size:22px;white-space:nowrap}
 .case .nums span{font-size:12px;color:var(--muted)}
+.case-featured{grid-column:1/-1;display:grid;grid-template-columns:53fr 47fr;gap:24px;align-items:center}
+.case-featured .shot{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.case-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 12px;margin:10px 0 12px}
+.case-head .title{display:flex;align-items:center;gap:12px}
+.case-head h3{margin:0}
+.case-featured .badge{margin:0}
+.case-featured .nums span{display:block;line-height:1.4;margin-top:2px;text-wrap:balance}
+.case-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}
+.case-actions .store img{display:block;height:44px;width:auto}
+.case-actions .btn{padding:12px 16px}
+.case-featured .listing{display:inline-block;margin-top:12px;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.case-featured .listing:hover{color:var(--text)}
+@media (max-width:1179px){.case-featured{grid-template-columns:1fr;gap:20px}}
 .stack{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .tool{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
 .tool b{font-weight:600;font-size:16px;display:block}
@@ -141,7 +154,7 @@ footer{color:#5f5f5f;font-size:13px;margin-top:-30px}
   <section class="hero">
     <div class="hello">👋 Say hello</div>
     <h2>I'm Christian S. J. Jensen,<br><span class="hl">Product &amp; Delivery Lead</span><br>based in Mexico City.</h2>
-    <p>I take digital products from first wireframe to launch, on time. Over 15+ years I've owned roadmaps and backlogs, run Scrum with distributed engineering teams, designed the UI/UX myself, and built AI into the way teams ship. Two platforms taken from zero to one, one of them to 175,000+ users.</p>
+    <p>I take digital products from first wireframe to launch, on time. Over 15+ years I've owned roadmaps and backlogs, run Scrum with distributed engineering teams, designed the UI/UX myself, and built AI into the way teams ship. Two platforms taken from zero to one, one of them to 175,000+ users. Most recently I designed, built and launched Torito, now on the App Store.</p>
     <div class="stats">
       <div class="stat"><b>175K+</b><span>Platform users</span></div>
       <div class="stat"><b>15+</b><span>Years in digital products</span></div>
@@ -164,6 +177,23 @@ footer{color:#5f5f5f;font-size:13px;margin-top:-30px}
         <h3>CanopyLAB</h3>
         <p>An AI-powered social learning platform for corporate training, plus a free learning community with courses from 30+ NGOs. I co-founded it, designed every screen and built the team that shipped it, including a personalization algorithm built years before LLMs.</p>
         <div class="nums"><div><b>175K</b><span>users</span></div><div><b>15–20</b><span>major releases</span></div><div><b>Impact 100</b><span>Norrsken</span></div></div>
+      </article>
+      <article class="case case-featured">
+        <img class="shot" src="img/torito/torito-screens.jpg" width="1600" height="1000" loading="lazy" alt="Torito app screenshots: cheapest gas nearby, all stations on a map, EV chargers">
+        <div>
+          <div class="tag">Consumer app · Built &amp; launched by me</div>
+          <div class="case-head">
+            <div class="title"><img class="logo" src="img/torito/torito-icon.png" width="40" height="40" alt=""><h3>Torito</h3></div>
+            <span class="badge"><span class="dot"></span>Live on the App Store</span>
+          </div>
+          <p>Torito shows today's gas price at every station in Mexico, over 12,700 of them, plus EV chargers, on a list and a map. I came up with the idea, designed it and built it myself with Lovable and Claude, from the price data pipeline to the UI, and published it on the App Store in October 2026. Free on iPhone and on the web.</p>
+          <div class="nums"><div><b>12.7K</b><span>stations, updated daily</span></div><div><b>CNE</b><span>official price data</span></div><div><b>Oct 2026</b><span>live on the App Store</span></div></div>
+          <div class="case-actions">
+            <a class="store" href="https://apps.apple.com/mx/app/torito/id6818914679" target="_blank" rel="noopener"><img src="img/torito/app-store-badge-white.svg" height="44" alt="Download Torito on the App Store"></a>
+            <a class="btn" href="https://toritoapp.com" target="_blank" rel="noopener">toritoapp.com ↗</a>
+          </div>
+          <a class="listing" href="img/torito/torito-app-store-listing.webp" target="_blank" rel="noopener">See the App Store listing</a>
+        </div>
       </article>
     </div>
   </section>
