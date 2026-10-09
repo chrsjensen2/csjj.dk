@@ -87,7 +87,8 @@ main section{margin-bottom:72px}
 .tool b{font-weight:600;font-size:16px;display:block}
 .tool span{color:var(--muted);font-size:13px}
 .tool .logo img,.tool .logo svg{width:22px;height:22px;object-fit:contain}
-.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-bottom:12px}
+.edu-grid .item{margin-bottom:0}
 .contact{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px}
 .contact h3{font-size:30px;font-weight:500;letter-spacing:-.5px}
 .contact p{color:#b5b5b5;margin:8px 0 20px;max-width:560px}
