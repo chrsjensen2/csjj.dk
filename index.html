@@ -8,6 +8,7 @@
 <meta property="og:title" content="Christian S. J. Jensen | Product & Delivery Lead">
 <meta property="og:description" content="From wireframe to launch, on time. Product ownership, Agile delivery and AI-augmented teams.">
 <meta property="og:url" content="https://csjj.dk">
+<meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Christian S. J. Jensen">
 <meta property="og:image" content="https://csjj.dk/og-image.jpg">
@@ -15,6 +16,10 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Christian S. J. Jensen, Product &amp; Delivery Lead. From wireframe to launch, on time.">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://csjj.dk/">
+<link rel="alternate" hreflang="en" href="https://csjj.dk/">
+<link rel="alternate" hreflang="es" href="https://csjj.dk/es/">
+<link rel="alternate" hreflang="x-default" href="https://csjj.dk/">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -47,6 +52,11 @@ a{color:inherit;text-decoration:none}
 .icon-btn{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:var(--card-2);transition:.2s}
 .icon-btn:hover{border-color:var(--accent);color:var(--accent)}
 .icon-btn svg{width:18px;height:18px}
+.lang{display:flex;align-items:center;gap:7px;height:40px;padding:0 12px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);font-size:13px;line-height:1}
+.lang a{color:var(--muted);transition:.2s}
+.lang a:hover{color:var(--text)}
+.lang a[aria-current]{color:var(--accent);font-weight:700}
+.lang span{color:#3a3a3a}
 .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 10px;border-radius:12px;font-size:14px;font-weight:500;border:1px solid var(--line);background:var(--card-2);transition:.2s}
 .btn:hover{border-color:#3a3a3a}
@@ -141,6 +151,7 @@ footer{color:#5f5f5f;font-size:13px;margin-top:-30px}
     <a class="icon-btn" href="#work" aria-label="Selected work">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>
     </a>
+    <nav class="lang" aria-label="Language"><a href="./" hreflang="en" lang="en" aria-current="true">EN</a><span aria-hidden="true">|</span><a href="es/" hreflang="es" lang="es">ES</a></nav>
   </div>
   <div class="actions">
     <a class="btn" href="Christian_Jensen_CV.pdf" download>
@@ -281,5 +292,11 @@ footer{color:#5f5f5f;font-size:13px;margin-top:-30px}
   <footer>© 2026 Christian S. J. Jensen · csjj.dk</footer>
 </main>
 </div>
+<script>
+// Keep the current #section when switching language
+document.querySelectorAll('.lang a').forEach(a => a.addEventListener('click', () => {
+  if (location.hash) a.href = a.getAttribute('href').split('#')[0] + location.hash;
+}));
+</script>
 </body>
 </html>
