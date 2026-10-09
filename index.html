@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christian S. J. Jensen | Product & Delivery Lead</title>
+<meta name="description" content="Christian S. J. Jensen: Product & Delivery Lead in Mexico City. 15+ years taking digital products from zero to launch with distributed engineering teams.">
+<meta property="og:title" content="Christian S. J. Jensen | Product & Delivery Lead">
+<meta property="og:description" content="From wireframe to launch, on time. Product ownership, Agile delivery and AI-augmented teams.">
+<meta property="og:url" content="https://csjj.dk">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#050505; --card:#111111; --card-2:#161616; --line:#232323;
+  --text:#f2f2f2; --muted:#9a9a9a; --accent:#3ee08f; --accent-ink:#04140b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(900px 600px at -10% 110%, rgba(62,224,143,.16), transparent 60%);background-attachment:fixed}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:48px 24px 64px;display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:start}
+/* profile card */
+.profile{position:sticky;top:32px;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:16px 16px 22px;text-align:center}
+.photo{aspect-ratio:1/1;border-radius:20px;background:linear-gradient(145deg,#1d1d1d,#0b0b0b);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.monogram{font-size:72px;font-weight:700;letter-spacing:-2px;color:#2b2b2b}
+.monogram span{color:var(--accent)}
+.badge{display:inline-flex;align-items:center;gap:8px;margin:18px 0 10px;padding:6px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card-2);font-size:13px;color:#d6d6d6}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(62,224,143,.15)}
+.profile h1{font-size:24px;font-weight:600;letter-spacing:-.3px}
+.profile .role{color:var(--muted);font-size:14px;margin-top:2px}
+.socials{display:flex;justify-content:center;gap:10px;margin:16px 0 18px}
+.icon-btn{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:var(--card-2);transition:.2s}
+.icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+.icon-btn svg{width:18px;height:18px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 10px;border-radius:12px;font-size:14px;font-weight:500;border:1px solid var(--line);background:var(--card-2);transition:.2s}
+.btn:hover{border-color:#3a3a3a}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn svg{width:16px;height:16px}
+/* main */
+main section{margin-bottom:72px}
+.hello{color:var(--muted);font-size:17px;margin-bottom:10px}
+.hero h2{font-size:clamp(34px,4.6vw,52px);line-height:1.12;font-weight:500;letter-spacing:-1px}
+.hero h2 .hl{color:var(--accent)}
+.hero p{color:#bdbdbd;font-size:17px;max-width:680px;margin-top:22px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.stat b{display:block;font-size:34px;font-weight:600;letter-spacing:-.5px}
+.stat span{color:var(--muted);font-size:13px}
+.sec-title{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:500;margin-bottom:20px}
+.sec-title svg{width:20px;height:20px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-bottom:12px}
+.item-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.item-head .left{display:flex;gap:14px;align-items:center}
+.logo{width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;font-weight:700;font-size:15px;background:var(--card-2);border:1px solid var(--line)}
+.item h3{font-size:17px;font-weight:600}
+.item .org{color:var(--muted);font-size:14px}
+.date{flex:none;font-size:13px;padding:4px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card-2);white-space:nowrap}
+.item p{color:#b5b5b5;font-size:15px}
+.item ul{list-style:none;margin-top:10px}
+.item li{color:#b5b5b5;font-size:15px;padding-left:18px;position:relative;margin-top:6px}
+.item li::before{content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;border-radius:2px;background:var(--accent)}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.case .tag{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:1.2px}
+.case h3{font-size:20px;font-weight:600;margin:6px 0 8px}
+.case p{color:#b5b5b5;font-size:15px}
+.case .nums{display:flex;gap:22px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.case .nums b{display:block;font-size:22px}
+.case .nums span{font-size:12px;color:var(--muted)}
+.stack{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tool{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.tool b{font-weight:600;font-size:16px;display:block}
+.tool span{color:var(--muted);font-size:13px}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px}
+.contact h3{font-size:30px;font-weight:500;letter-spacing:-.5px}
+.contact p{color:#b5b5b5;margin:8px 0 20px;max-width:560px}
+.contact .row{display:flex;flex-wrap:wrap;gap:10px}
+.contact .btn{padding:12px 18px}
+footer{color:#5f5f5f;font-size:13px;margin-top:-30px}
+@media (max-width:960px){
+  .wrap{grid-template-columns:1fr;gap:40px;padding:24px 16px 48px}
+  .profile{position:static;max-width:420px;margin:0 auto;width:100%}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .case-grid,.stack,.edu-grid{grid-template-columns:1fr}
+  .item-head{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<aside class="profile">
+  <div class="photo">
+    <img src="photo.jpg" alt="Christian S. J. Jensen" width="600" height="600">
+  </div>
+  <div class="badge"><span class="dot"></span>Open to new roles</div>
+  <h1>Christian S. J. Jensen</h1>
+  <div class="role">Product &amp; Delivery Lead · Mexico City</div>
+  <div class="socials">
+    <a class="icon-btn" href="https://www.linkedin.com/in/chrsjensen" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>
+    </a>
+    <a class="icon-btn" href="mailto:chrsjensen@yahoo.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
+    <a class="icon-btn" href="#work" aria-label="Selected work">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>
+    </a>
+  </div>
+  <div class="actions">
+    <a class="btn" href="Christian_Jensen_CV.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Download CV</a>
+    <a class="btn primary" href="#contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></svg>Contact me</a>
+  </div>
+</aside>
+
+<main>
+  <section class="hero">
+    <div class="hello">👋 Say hello</div>
+    <h2>I'm Christian S. J. Jensen,<br><span class="hl">Product &amp; Delivery Lead</span><br>based in Mexico City.</h2>
+    <p>I take digital products from first wireframe to launch, on time. Over 15+ years I've owned roadmaps and backlogs, run Scrum with distributed engineering teams, designed the UI/UX myself, and built AI into the way teams ship. Two platforms taken from zero to one, one of them to 175,000+ users.</p>
+    <div class="stats">
+      <div class="stat"><b>175K+</b><span>Platform users</span></div>
+      <div class="stat"><b>15+</b><span>Years in digital products</span></div>
+      <div class="stat"><b>~95%</b><span>Releases on schedule</span></div>
+      <div class="stat"><b>15</b><span>Engineers led, remote</span></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="sec-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>Selected work</div>
+    <div class="case-grid">
+      <article class="case">
+        <div class="tag">Creator economy · Zero to one</div>
+        <h3>Ganax</h3>
+        <p>A results-based influencer marketing platform for creators, brands and admins. I designed the full UI/UX, ran delivery with an engineering team in Vietnam, and shipped Stripe payments, social media API integrations, an AI chatbot and AI agents for testing and code review.</p>
+        <div class="nums"><div><b>3 mo</b><span>to MVP</span></div><div><b>~30</b><span>brands onboarded</span></div><div><b>30+</b><span>sprints shipped</span></div></div>
+      </article>
+      <article class="case">
+        <div class="tag">EdTech · SaaS</div>
+        <h3>CanopyLAB</h3>
+        <p>An AI-powered social learning platform for corporate training, plus a free learning community with courses from 30+ NGOs. I co-founded it, designed every screen and built the team that shipped it, including a personalization algorithm built years before LLMs.</p>
+        <div class="nums"><div><b>175K</b><span>users</span></div><div><b>15–20</b><span>major releases</span></div><div><b>Impact 100</b><span>Norrsken</span></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="sec-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 12h18"/></svg>Experience</div>
+
+    <div class="item">
+      <div class="item-head"><div class="left"><div class="logo" style="color:#3ee08f">G</div><div><h3>Product &amp; Delivery Lead</h3><div class="org">Ganax · Mexico City</div></div></div><div class="date">2023 – Present</div></div>
+      <ul>
+        <li>Took the platform from zero to one: full UI/UX, MVP in 3 months, full product in 6.</li>
+        <li>Run bi-weekly Scrum sprints with ~95% of releases on schedule and every release within budget.</li>
+        <li>Hired ~10 team members, including 8 engineers, and lead them across 13 time zones.</li>
+        <li>Onboarded ~30 brands with campaign budgets of USD 50K–100K during an invite-only launch.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><div class="left"><div class="logo" style="color:#7fb4ff">C</div><div><h3>Co-Founder</h3><div class="org">CanopyLAB · Copenhagen / remote</div></div></div><div class="date">2011 – 2024</div></div>
+      <ul>
+        <li>Grew the platform from 0 to 100,000+ users in five years and ~175,000 today, mostly through word of mouth, talks and SEO.</li>
+        <li>Served hundreds of clients, including universities, Deloitte and Danish SMEs.</li>
+        <li>Hired and led a Vietnam-based team of up to 15 and managed a ~USD 500K annual technology budget.</li>
+        <li>Continues in an advisory capacity.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><div class="left"><div class="logo" style="color:#ffb86b">S</div><div><h3>Owner, Independent Design Practice</h3><div class="org">C/S/J/J · Denmark &amp; Australia</div></div></div><div class="date">2011 – 2016</div></div>
+      <p>A one-person studio serving ~10 clients, several for all five years. Led graphic design, marketing and magazine production for Pixelz, later acquired for a nine-figure DKK sum.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><div class="left"><div class="logo" style="color:#ff7d9c">A</div><div><h3>Graphic Designer</h3><div class="org">Albatros Travel · Copenhagen</div></div></div><div class="date">2012 – 2014</div></div>
+      <p>Led marketing design for the Danish and German markets, and created the first wireframes and UI/UX for the company's app.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><div class="left"><div class="logo" style="color:#c9c9c9">+</div><div><h3>Earlier</h3><div class="org">Brightside (agency) · Jysk Rejsebureau · NS System</div></div></div><div class="date">1998 – 2012</div></div>
+      <p>Design internship at a full-service advertising agency, long-haul travel consulting, and my first design job in prepress.</p>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="sec-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>Toolkit</div>
+    <div class="stack">
+      <div class="tool"><div class="logo" style="color:#4c9aff">J</div><div><b>Jira</b><span>Backlog &amp; sprints</span></div></div>
+      <div class="tool"><div class="logo" style="color:#ff7262">F</div><div><b>Figma</b><span>UI/UX &amp; prototyping</span></div></div>
+      <div class="tool"><div class="logo" style="color:#e9a8ff">S</div><div><b>Slack</b><span>Async team delivery</span></div></div>
+      <div class="tool"><div class="logo" style="color:#ff8b5c">L</div><div><b>Lovable</b><span>AI prototyping</span></div></div>
+      <div class="tool"><div class="logo" style="color:#3ee08f">AI</div><div><b>AI agents</b><span>Testing &amp; code review</span></div></div>
+      <div class="tool"><div class="logo" style="color:#8f8cff">S</div><div><b>Stripe</b><span>Payments integration</span></div></div>
+      <div class="tool"><div class="logo" style="color:#ff6b6b">Ai</div><div><b>Adobe Creative Suite</b><span>Design &amp; print</span></div></div>
+      <div class="tool"><div class="logo" style="color:#d6d6d6">M</div><div><b>Midjourney</b><span>AI imagery</span></div></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="sec-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>Education &amp; languages</div>
+    <div class="edu-grid">
+      <div class="item"><div class="item-head" style="border:0;margin:0;padding:0"><div><h3>AP Degree, Design &amp; Technology</h3><div class="org">UCN, University College of Northern Denmark</div></div></div></div>
+      <div class="item"><div class="item-head" style="border:0;margin:0;padding:0"><div><h3>Art History</h3><div class="org">Aarhus University</div></div></div></div>
+      <div class="item" style="grid-column:1/-1"><div class="item-head" style="border:0;margin:0;padding:0"><div><h3>Languages</h3><div class="org">Danish (native) · English (fluent) · Swedish, Norwegian, German (working knowledge)</div></div></div></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="sec-title" style="margin-bottom:10px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></svg>Contact</div>
+      <h3>Let's get in touch!</h3>
+      <p>Open to Product Manager, Product Owner and Delivery roles, remote or in Mexico City. The fastest way to reach me is email or LinkedIn.</p>
+      <div class="row">
+        <a class="btn primary" href="mailto:chrsjensen@yahoo.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>chrsjensen@yahoo.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/chrsjensen" target="_blank" rel="noopener">LinkedIn profile</a>
+        <a class="btn" href="Christian_Jensen_CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Christian S. J. Jensen · csjj.dk</footer>
+</main>
+</div>
+</body>
+</html>
