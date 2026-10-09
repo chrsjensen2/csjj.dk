@@ -79,8 +79,6 @@ main section{margin-bottom:72px}
 .case-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}
 .case-actions .store img{display:block;height:44px;width:auto}
 .case-actions .btn{padding:12px 16px}
-.case-featured .listing{display:inline-block;margin-top:12px;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
-.case-featured .listing:hover{color:var(--text)}
 @media (max-width:1179px){.case-featured{grid-template-columns:1fr;gap:20px}.case-featured .shot{max-width:440px;margin:0 auto}}
 .stack{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .tool{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
