@@ -80,6 +80,17 @@ main section{margin-bottom:72px}
 .case-actions .store img{display:block;height:44px;width:auto}
 .case-actions .btn{padding:12px 16px}
 @media (max-width:1179px){.case-featured{grid-template-columns:1fr;gap:20px}.case-featured .shot{max-width:440px;margin:0 auto}}
+.case-wide{grid-template-columns:1fr;gap:22px}
+/* video with poster and an optional pause/play button (js/video.js) */
+.vid{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:#0b0b0b}
+.vid video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.vid-btn{display:none;position:absolute;right:12px;bottom:12px;width:40px;height:40px;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(5,5,5,.62);color:#fff;place-items:center;cursor:pointer;transition:.2s}
+.js .vid-btn{display:grid}
+.vid-btn:hover{background:rgba(5,5,5,.85)}
+.vid-btn svg{width:16px;height:16px}
+.vid-btn .i-play,.vid-btn.is-paused .i-pause{display:none}
+.vid-btn.is-paused .i-play{display:block}
+.case-wide :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .stack{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .tool{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
 .tool b{font-weight:600;font-size:16px;display:block}

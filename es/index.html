@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css?v=a2f3481c">
+<link rel="stylesheet" href="../styles.css?v=d2506490">
 </head>
 <body>
 <header class="topbar"><nav class="lang" aria-label="Idioma"><a href="../" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="./" hreflang="es" lang="es" aria-current="true">ES</a></nav></header>
@@ -75,6 +75,29 @@
   <section id="work">
     <div class="sec-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>Proyectos destacados</div>
     <div class="case-grid">
+      <article class="case case-featured case-wide">
+        <div class="vid">
+          <video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="720" data-poster="../img/mossi/mossi-card-poster.webp" aria-label="MØSSI: Møssi saluda desde la puerta redonda de su casa entre las raíces; luego aparecen su hermano Krammi, Mama Soli y Papa Pusti.">
+            <source data-src="../img/mossi/mossi-card-loop.webm" type="video/webm">
+            <source data-src="../img/mossi/mossi-card-loop.mp4" type="video/mp4">
+          </video>
+          <button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button>
+        </div>
+        <div>
+          <div class="tag">Serie animada · Diseñada y creada con IA</div>
+          <div class="case-head">
+            <div class="title"><h3 translate="no">MØSSI</h3></div>
+            <span class="badge"><span class="dot"></span><span>Una serie infantil, ya en <span translate="no">YouTube</span></span></span>
+          </div>
+          <p><span translate="no">MØSSI</span> es una serie animada para niños de 3 a 6 años sobre una pequeña duendecita del bosque y su familia, muy adentro del musgo. La diseñé y creé de principio a fin con IA: el estilo de fieltro y los cinco personajes, la animación, las voces y la música, la edición y la web bilingüe, que diseñé y desarrollé con <span translate="no">Claude Code</span>.</p>
+          <div class="nums"><div><b>5</b><span>personajes animados con IA</span></div><div><b>EN + ES</b><span>YouTube, Instagram y web</span></div><div><b>Oct 2026</b><span>canción y web publicadas</span></div></div>
+          <div class="case-actions">
+            <a class="btn primary" href="mossi/">Ver el caso completo →</a>
+            <a class="btn" href="https://downinthemoss.com" target="_blank" rel="noopener">downinthemoss.com ↗</a>
+            <a class="btn" href="https://www.youtube.com/watch?v=EScUEC3FDyw" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+          </div>
+        </div>
+      </article>
       <article class="case">
         <div class="tag">Economía de creadores · De cero a uno</div>
         <h3 translate="no">Ganax</h3>
@@ -190,6 +213,7 @@
   <footer>© 2026 Christian S. J. Jensen · csjj.dk</footer>
 </main>
 </div>
+<script src="../js/video.js?v=dd02ee6b" defer></script>
 <script>
 // Conserva la #sección actual al cambiar de idioma
 document.querySelectorAll('.lang a').forEach(a => a.addEventListener('click', () => {

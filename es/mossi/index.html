@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MØSSI: una serie animada creada con IA · Christian S. J. Jensen</title>
+<meta name="description" content="Cómo diseñé y creé una serie infantil bilingüe con IA: personajes, pipeline de animación, música y web.">
+<meta property="og:title" content="MØSSI: una serie animada creada con IA · Christian S. J. Jensen">
+<meta property="og:description" content="Cómo diseñé y creé una serie infantil bilingüe con IA: personajes, pipeline de animación, música y web.">
+<meta property="og:url" content="https://csjj.dk/es/mossi/">
+<meta property="og:locale" content="es_MX">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Christian S. J. Jensen">
+<meta property="og:image" content="https://csjj.dk/img/mossi/mossi-og-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Møssi saluda en la puerta redonda de su casa entre las raíces, bajo un gran árbol en un bosque de musgo iluminado por el sol.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MØSSI: una serie animada creada con IA · Christian S. J. Jensen">
+<meta name="twitter:description" content="Cómo diseñé y creé una serie infantil bilingüe con IA: personajes, pipeline de animación, música y web.">
+<meta name="twitter:image" content="https://csjj.dk/img/mossi/mossi-og-1200x630.jpg">
+<meta name="twitter:image:alt" content="Møssi saluda en la puerta redonda de su casa entre las raíces, bajo un gran árbol en un bosque de musgo iluminado por el sol.">
+<link rel="canonical" href="https://csjj.dk/es/mossi/">
+<link rel="alternate" hreflang="en" href="https://csjj.dk/mossi/">
+<link rel="alternate" hreflang="es" href="https://csjj.dk/es/mossi/">
+<link rel="alternate" hreflang="x-default" href="https://csjj.dk/mossi/">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="theme-color" content="#050505">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../../img/mossi/hero/mossi-hero-family-1920-poster.webp" fetchpriority="high" media="not all and (max-width:699px) and (orientation:portrait) and (prefers-reduced-motion:no-preference)">
+<link rel="preload" as="image" href="../../img/mossi/mossi-card-poster.webp" fetchpriority="high" media="(max-width:699px) and (orientation:portrait) and (prefers-reduced-motion:no-preference)">
+<link rel="stylesheet" href="../../styles.css?v=d2506490">
+<link rel="stylesheet" href="../../mossi/mossi.css?v=7c44bea9">
+</head>
+<body class="cs">
+<header class="topbar"><a class="back" href="../">← Christian S. J. Jensen</a><nav class="lang" aria-label="Idioma"><a href="../../mossi/" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="./" hreflang="es" lang="es" aria-current="true">ES</a></nav></header>
+<main class="cs-wrap">
+
+  <section class="cs-hero">
+    <div class="vid">
+      <video class="hero-wide" data-lazy muted loop playsinline preload="metadata" width="1920" height="1080" data-poster="../../img/mossi/hero/mossi-hero-family-1920-poster.webp" aria-label="MØSSI: Møssi saluda desde la puerta redonda de su casa entre las raíces; luego aparecen su hermano Krammi, Mama Soli y Papa Pusti."><source data-src="../../img/mossi/hero/mossi-hero-family-1920.webm" type="video/webm"><source data-src="../../img/mossi/hero/mossi-hero-family-1920.mp4" type="video/mp4"></video>
+      <video class="hero-tall" data-lazy muted loop playsinline preload="metadata" width="608" height="1080" data-poster="../../img/mossi/mossi-card-poster.webp" aria-label="MØSSI: el suelo de musgo de un bosque iluminado por el sol; Krammi entra y se acerca a la cámara."><source data-src="../../img/mossi/hero/mossi-hero-family-mobile-608x1080.webm" type="video/webm"><source data-src="../../img/mossi/hero/mossi-hero-family-mobile-608x1080.mp4" type="video/mp4"></video>
+      <button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button>
+    </div>
+    <div class="cs-hero-text">
+      <div class="cs-eyebrow">Caso de estudio · Producción con IA · Diseño</div>
+      <h1 translate="no">MØSSI</h1>
+      <p class="cs-lead">Una serie animada para preescolares, diseñada y creada con IA, desde el primer personaje hasta la web publicada.</p>
+      <dl class="cs-meta"><div><dt>Rol</dt><dd>Diseño de personajes, producción con IA, web, lanzamiento</dd></div><div><dt>Herramientas</dt><dd><span translate="no">Higgsfield (Seedance 2.0, Nano Banana), ElevenLabs, Suno, Claude, Claude Code, Cloudflare</span></dd></div><div><dt>Periodo</dt><dd>ago–oct 2026</dd></div><div><dt>Estado</dt><dd>Canción y web publicadas; episodio 1 en revisión final</dd></div></dl>
+      <div class="cs-actions">
+        <a class="btn primary" href="https://downinthemoss.com" target="_blank" rel="noopener">Visitar downinthemoss.com ↗</a>
+        <a class="btn" href="#launch">Ver la canción ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec" id="challenge" aria-labelledby="h-challenge">
+    <div class="cs-num" aria-hidden="true">01</div>
+    <h2 id="h-challenge">El reto</h2>
+    <p class="cs-text">Crear una serie que parezca stop-motion hecho a mano, sin estudio, sin equipo y sin marionetas. Los modelos de vídeo con IA son buenos para planos sueltos y bonitos, pero malos para la continuidad: de un clip a otro, los personajes cambian de color, ganan orejas, pierden brazos o se inventan amigos nuevos. El trabajo era convertir eso en una línea de producción fiable para televisión infantil, en dos idiomas.</p>
+  </section>
+
+  <section class="cs-sec" id="characters" aria-labelledby="h-chars">
+    <div class="cs-num" aria-hidden="true">02</div>
+    <h2 id="h-chars">Cinco personajes, siempre iguales</h2>
+    <p class="cs-text">Cada personaje tiene una hoja de giro aprobada, una ficha de rasgos por escrito y un elemento de IA reutilizable. Cada prompt incluye la ficha completa, porque sin ella el modelo se desvía: <span translate="no">Papa Pusti</span> tiene una sola oreja, las formas curvas de <span translate="no">Krammi</span> son brazos y no orejas, y <span translate="no">Møssi</span> es naranja, nunca rosa.</p>
+    <div class="chars">
+      <div class="chars-group chars-family">
+        <h3>Familia</h3>
+        <div class="chars-grid"><figure class="char char-mossi"><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="720" data-poster="../../img/mossi/characters/mossi-720-poster.webp" aria-label="Møssi, un pequeño personaje de fieltro naranja con mechones turquesa, está de pie sobre una alfombra redonda dentro de la casa entre las raíces y saluda."><source data-src="../../img/mossi/characters/mossi-720.webm" type="video/webm"><source data-src="../../img/mossi/characters/mossi-720.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div><figcaption><b translate="no">Møssi</b> · la protagonista</figcaption></figure><figure class="char char-krammi"><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="720" data-poster="../../img/mossi/characters/krammi-720-poster.webp" aria-label="Krammi, un personaje de fieltro morado, abre sus largos brazos curvos y luego los recoge."><source data-src="../../img/mossi/characters/krammi-720.webm" type="video/webm"><source data-src="../../img/mossi/characters/krammi-720.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div><figcaption><b translate="no">Krammi</b> · su hermanito</figcaption></figure><figure class="char char-mama-soli"><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="720" data-poster="../../img/mossi/characters/mama-soli-720-poster.webp" aria-label="Mama Soli, un personaje de fieltro amarillo con un gorro de punto turquesa y cuernos enroscados, junta las manos y se ríe."><source data-src="../../img/mossi/characters/mama-soli-720.webm" type="video/webm"><source data-src="../../img/mossi/characters/mama-soli-720.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div><figcaption><b translate="no">Mama Soli</b> · mamá</figcaption></figure><figure class="char char-papa-pusti"><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="720" data-poster="../../img/mossi/characters/papa-pusti-720-poster.webp" aria-label="Papa Pusti, un personaje de fieltro turquesa con mejillas rosadas y una sola oreja, frunce los labios y luego sonríe."><source data-src="../../img/mossi/characters/papa-pusti-720.webm" type="video/webm"><source data-src="../../img/mossi/characters/papa-pusti-720.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div><figcaption><b translate="no">Papa Pusti</b> · papá</figcaption></figure></div>
+      </div>
+      <div class="chars-group chars-friend">
+        <h3>Amigo</h3>
+        <figure class="char char-bussi"><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="720" data-poster="../../img/mossi/characters/bussi-720-poster.webp" aria-label="Bussi, un personaje de fieltro azul con un mechón verde enroscado, está en la puerta redonda abierta y saluda."><source data-src="../../img/mossi/characters/bussi-720.webm" type="video/webm"><source data-src="../../img/mossi/characters/bussi-720.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div><figcaption><b translate="no">Bussi</b> · el amigo de al lado</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec" id="pipeline" aria-labelledby="h-pipeline">
+    <div class="cs-num" aria-hidden="true">03</div>
+    <h2 id="h-pipeline">El pipeline</h2>
+    <div class="strip"><figure class="square"><img src="../../img/mossi/pipeline/mossi-turnaround.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="Hoja de giro de Møssi: seis vistas del personaje de fieltro naranja, de frente, de lado y de espaldas, sobre fondo crema."><figcaption>Hoja de giro</figcaption></figure><div class="arrow" aria-hidden="true">→</div><figure class="square"><img src="../../img/mossi/pipeline/mossi_1.webp" width="1024" height="1024" loading="lazy" decoding="async" alt="Møssi de frente sobre fondo crema: la vista aprobada."><figcaption>Vista fija</figcaption></figure><div class="arrow" aria-hidden="true">→</div><figure><img src="../../img/mossi/pipeline/root-home-outside.webp" width="1672" height="942" loading="lazy" decoding="async" alt="La casa entre las raíces: una puerta redonda verde con ventanas iluminadas en las raíces de un gran árbol, en un bosque de musgo."><figcaption>Escenario fijo</figcaption></figure><div class="arrow" aria-hidden="true">→</div><figure><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="720" data-poster="../../img/mossi/characters/mossi-720-poster.webp" aria-label="Møssi está de pie sobre una alfombra redonda dentro de la casa entre las raíces y saluda."><source data-src="../../img/mossi/characters/mossi-720.webm" type="video/webm"><source data-src="../../img/mossi/characters/mossi-720.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div><figcaption>Plano final</figcaption></figure></div>
+    <ol class="steps"><li><span class="n" aria-hidden="true">1</span><p><b>Diseñar y fijar.</b> Diseñé los personajes en <span translate="no">Higgsfield</span>. Sus hojas de giro se convierten en elementos reutilizables de <span translate="no">Higgsfield</span>, con una ficha de rasgos por personaje y solo cuatro escenarios.</p></li><li><span class="n" aria-hidden="true">2</span><p><b>Primero la voz.</b> Cada frase se graba con la voz fija del personaje (<span translate="no">ElevenLabs</span>) y se transcribe para comprobarla antes de animar.</p></li><li><span class="n" aria-hidden="true">3</span><p><b>Editar, no recrear.</b> Cada plano parte de un fotograma aprobado y se anima en <span translate="no">Seedance 2.0</span>, con las frases grabadas como referencia de audio.</p></li><li><span class="n" aria-hidden="true">4</span><p><b>Control de calidad.</b> Hojas de fotogramas contra las fichas, transcripciones con tiempos, detección de silencios, corrección de color por clip y montaje.</p></li><li><span class="n" aria-hidden="true">5</span><p><b>Música.</b> Canciones originales hechas con <span translate="no">Suno</span> suenan sobre la imagen.</p></li></ol>
+  </section>
+
+  <section class="cs-sec" id="lessons" aria-labelledby="h-lessons">
+    <div class="cs-num" aria-hidden="true">04</div>
+    <h2 id="h-lessons">Lo que aprendí del vídeo con IA</h2>
+    <ul class="lessons"><li>El audio nativo inventa diálogos y voces. Siempre hay que darle las frases grabadas.</li><li>Máximo dos personajes por clip. Las escenas de grupo se montan con clips separados.</li><li>Las palabras se toman al pie de la letra: «dibujo» crea una tarjeta de papel, y un número en el prompt aparece impreso en el decorado.</li><li>Los alejamientos de cámara inventan decorado nuevo. Cámara fija, salvo que la historia pida movimiento.</li><li>Las acciones clave van al principio: lo que se pide para el final aparece en el último medio segundo.</li></ul>
+  </section>
+
+  <section class="cs-sec" id="website" aria-labelledby="h-site">
+    <div class="cs-num" aria-hidden="true">05</div>
+    <h2 id="h-site">La web</h2>
+    <p class="cs-text"><span translate="no">downinthemoss.com</span> es un scroll cinematográfico: vuelas desde las copas de los árboles hasta el musgo, cruzas la puerta de la casa entre las raíces y conoces a la familia uno por uno. La diseñé y desarrollé con <span translate="no">Claude Code</span>, en inglés y español, con segmentos de vuelo generados con IA y diseños separados para ordenador y móvil. Alojada en <span translate="no">Cloudflare Pages</span>.</p>
+    <div class="devices">
+      <div class="browser"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>downinthemoss.com</span></div><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="1280" height="800" data-poster="../../img/mossi/site/downinthemoss-site-desktop-poster.jpg" aria-label="Grabación de downinthemoss.com en un portátil: el título MØSSI en el musgo, el suelo del bosque, el interior de la casa entre las raíces, una página para cada personaje y la sección Watch MØSSI."><source data-src="../../img/mossi/site/downinthemoss-site-desktop.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div></div>
+      <div class="phone"><div class="vid"><video data-lazy autoplay muted loop playsinline preload="none" width="390" height="844" data-poster="../../img/mossi/site/downinthemoss-site-phone-poster.jpg" aria-label="Grabación de downinthemoss.com en un móvil: las copas de los árboles, el claro soleado, la puerta de la casa entre las raíces y las páginas de Møssi, Krammi y Mama Soli."><source data-src="../../img/mossi/site/downinthemoss-site-phone.webm" type="video/webm"><source data-src="../../img/mossi/site/downinthemoss-site-phone.mp4" type="video/mp4"></video><button class="vid-btn" type="button" aria-label="Pausar el vídeo"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button></div></div>
+    </div>
+    <div class="shots"><img src="../../img/mossi/site/downinthemoss-desktop-00.webp" width="1440" height="900" loading="lazy" decoding="async" alt="Pantalla de inicio de downinthemoss.com: el título MØSSI tejido en el musgo, bajo hojas de helecho."><img src="../../img/mossi/site/downinthemoss-desktop-02.webp" width="1440" height="900" loading="lazy" decoding="async" alt="downinthemoss.com, «The root home»: la puerta redonda en las raíces de un gran árbol."><img src="../../img/mossi/site/downinthemoss-desktop-04.webp" width="1440" height="900" loading="lazy" decoding="async" alt="downinthemoss.com, la página de Krammi: Krammi sobre fondo verde."></div>
+    <div class="cs-actions"><a class="btn primary" href="https://downinthemoss.com" target="_blank" rel="noopener">Visitar downinthemoss.com ↗</a></div>
+  </section>
+
+  <section class="cs-sec" id="launch" aria-labelledby="h-launch">
+    <div class="cs-num" aria-hidden="true">06</div>
+    <h2 id="h-launch">Lanzamiento</h2>
+    <div class="yt">
+      <button class="yt-facade" type="button" data-yt="EScUEC3FDyw" data-yt-params="&amp;hl=es&amp;cc_lang_pref=es" data-yt-title="Mossi – Down in the Moss | Official Theme Song" aria-label="Reproducir «Mossi – Down in the Moss | Official Theme Song» en YouTube">
+        <img src="../../img/mossi/mossi-social-cover.webp" width="2752" height="1536" loading="lazy" decoding="async" alt="">
+        <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+      </button>
+    </div>
+    <p class="cs-text">La canción ya está en YouTube. <span translate="no">MØSSI</span> se lanza en dos idiomas: <span translate="no">Down in the Moss</span> (inglés) y <span translate="no">Entre el Musgo</span> (español), cada uno con su canal de YouTube, Instagram y página de Facebook.</p>
+    <div class="channels"><a class="btn" href="https://www.youtube.com/@downinthemoss" target="_blank" rel="noopener"><span><span translate="no">YouTube · Down in the Moss</span> ↗</span></a><a class="btn" href="https://www.youtube.com/@EntreElMusgo" target="_blank" rel="noopener"><span><span translate="no">YouTube · Entre el Musgo</span> ↗</span></a><a class="btn" href="https://www.instagram.com/downinthemoss" target="_blank" rel="noopener"><span><span translate="no">Instagram · @downinthemoss</span> ↗</span></a><a class="btn" href="https://www.instagram.com/entreelmusgo" target="_blank" rel="noopener"><span><span translate="no">Instagram · @entreelmusgo</span> ↗</span></a></div>
+  </section>
+
+  <section class="contact cs-cta">
+    <h3>¿Quieres algo así para tu producto?</h3>
+    <div class="row">
+      <a class="btn primary" href="../#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></svg>Escríbeme</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Christian S. J. Jensen · csjj.dk</footer>
+</main>
+<script src="../../js/video.js?v=dd02ee6b" defer></script>
+<script>
+// Conserva la #sección actual al cambiar de idioma
+document.querySelectorAll('.lang a').forEach(a => a.addEventListener('click', () => {
+  if (location.hash) a.href = a.getAttribute('href').split('#')[0] + location.hash;
+}));
+</script>
+</body>
+</html>
